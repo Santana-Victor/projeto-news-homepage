@@ -1,0 +1,152 @@
+@media (max-width: 1200px) {
+    .cabecalho, .conteiner {
+        max-width: 1000px;
+    }
+    .cartoes article {
+        width: 30rem;
+    }
+    .cartoes div {
+        gap: 1rem;
+    }
+    .cartoes h4 {
+        font-size: 1.4rem;
+    }
+    .cartoes p {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 1024px) {
+    .cabecalho {
+        padding: 2rem 1rem;
+    }
+    .conteiner {
+        padding: 0 1rem;
+    }
+    .artigo-web {
+        gap: 1rem;
+    }
+    .artigo-web .titulo-web {
+        font-size: 4.2rem;
+    }
+    .artigo-web .sobre-web {
+        font-size: 1.4rem;
+    }
+    .ao-lado {
+        gap: 2rem;
+        padding: 1.5rem;
+        
+    }
+    .ao-lado .titulo-ao-lado {
+        font-size: 3.5rem;
+        color: #e9ab53;
+    }
+    .ao-lado article {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-bottom: 2rem;
+    }
+}
+@media (max-width: 980px) {
+    .artigo-web .titulo-web {
+        font-size: 3.5rem;
+    }
+}
+@media (max-width: 768px) {
+    .cabecalho {
+        position: fixed;
+        z-index: 1;
+        background-color: #ffffff;
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        width: 75%;
+        top: 8rem;
+        right: 0;
+        background: #ffffff;
+        transition: 0.6;
+        z-index: 1;
+        height: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.aberto .menu{
+        height: calc(100vh - 8rem);
+        visibility: visible;
+        overflow-y: auto;
+        flex-direction: column;
+        justify-content: center;   
+        padding: 0 2rem; 
+    }
+    #botao-menu {
+        display: flex;
+        font-size: 1.6rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.7rem;
+    }
+    #hamburger {
+        border-top: 0.2rem solid    ;
+        width: 2rem;
+    }
+    #hamburger::after, #hamburger::before {
+        content: '';
+        display: block;
+        width: 2rem;
+        height: 0.2rem;
+        background-color: currentColor;
+        margin-top: 0.5rem;
+        transition: 0.3s;
+        position: relative;
+    }
+    #nav.aberto #hamburger {
+        border-top-color: transparent;
+    }
+    #nav.aberto #hamburger::after {
+        transform: rotate(-135deg);
+        top: -0.7rem;
+    }
+    #nav.aberto #hamburger::before {
+        transform: rotate(135deg);
+    }
+    .conteiner {
+        padding-top: 8rem;
+    }
+    .vitrine {
+        flex-direction: column;
+    }
+    .artigo-web {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .artigo-web .titulo-web {
+        font-size: 4rem;
+        padding: 1rem 0;
+    }
+    .artigo-web div {
+        gap: 3rem;
+    }
+    .artigo-web .sobre-web {
+        padding: 0;
+        width: 60%;
+        font-size: 1.6rem;
+    }
+    .cartoes h4 {
+        font-size: 1.5rem;
+    }
+    .cartoes p {
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 480px) {
+    .artigo-web .titulo-web {
+        font-size: 3.5rem;
+        padding: 1rem 0;
+        width: 100%;
+    }
+    .artigo-web .sobre-web {
+        width: 80%;
+    }
+}
