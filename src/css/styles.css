@@ -11,10 +11,8 @@ html {
 }
 body {
     font-family: 'Inter', sans-serif;
-    font-size: 1.6rem;
 }
 img {
-    max-width: 100%;
     width: 100%;
     height: auto;
 }
@@ -37,11 +35,12 @@ p {
 #botao-menu {
     display: none;
 }
-#nav .menu {
+.menu {
     display: flex;
     gap: 3rem;
 }
 .menu a {
+    font-size: 1.6rem;
     color: #5d5f79;
 }
 .menu a:hover {
@@ -61,10 +60,10 @@ p {
     gap: 2rem;
 }
 .artigo-web .titulo-web {
-    font-size: 5rem;
+    font-size: clamp(3.5rem, 4vw, 5rem);
     font-weight: 800;
     color: #00001a;
-    padding: 2rem 0;
+    padding-top: 2rem;
 }
 .artigo-web div {
     display: flex;
@@ -72,6 +71,7 @@ p {
     gap: 3.5rem;
 }
 .artigo-web .sobre-web {
+    font-size: clamp(1.4rem, 2vw, 1.6rem);
     padding: 2rem 0;
 }
 .artigo-web .botao-ler-mais {
@@ -79,14 +79,12 @@ p {
     color: #ffffff;
     padding: 1rem 3rem;
     font-size: 1.6rem;
-    border: none;
-    outline: none;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 0.25rem;
     font-weight: 700;
     transition: all 0.3s ease-in-out;
     width: 19rem;
-    cursor: pointer;
 }
 .artigo-web .botao-ler-mais:hover {
     background-color: #00001a;
@@ -109,14 +107,18 @@ p {
     gap: 1.5rem;
     padding-bottom: 2rem;
 }
-.vitrine .ao-lado article:not(:last-child) {
+.ao-lado article:not(:last-child) {
     border-bottom: 0.1rem solid #5d5f79;
 }
 .ao-lado a {
+    font-size: 1.6rem;
     color: #ffffff;
 }
-.vitrine .ao-lado a:hover {
+.ao-lado a:hover {
     color: #e9ab53;
+}
+.ao-lado p {
+    font-size: 1.4rem;
 }
 .cartoes {
     display: flex;
@@ -145,9 +147,12 @@ p {
     opacity: 75%;
 }
 .cartoes a {
-    font-size: 1.6rem;
+    font-size: clamp(1.4rem, 2vw, 1.6rem);
     color: #00001a;
 }
 .cartoes a:hover {
     color: #f15e50;
+}
+.cartoes p {
+    font-size: clamp(1.4rem, 2vw, 1.6rem);
 }
