@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --txt-color-gray: #5d5f79;
+  --txt-color-red: #f15e50;
+  --txt-color-white: #ffffff;
+  --txt-title-color: #00001a;
+  --txt-subtitle-color: #e9ab53;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.5;
+  color: var(--txt-color);
+}
