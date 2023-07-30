@@ -1,0 +1,10 @@
+.shop_window {
+  display: flex;
+  gap: 30px;
+}
+
+@media (max-width: 950px) {
+  .shop_window {
+    flex-direction: column;
+  }
+}

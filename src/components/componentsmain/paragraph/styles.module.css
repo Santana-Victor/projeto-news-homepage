@@ -1,0 +1,28 @@
+.paragraph {
+  font-size: clamp(14px, 2vw, 16px);
+  padding: 20px 0;
+}
+
+.aside__paragraph {
+  font-size: 14px;
+  color: var(--txt-color-white);
+  opacity: 0.7;
+}
+
+.cards__paragraph {
+  font-size: clamp(14px, 2vw, 16px);
+  line-height: normal;
+}
+
+@media (max-width: 768px) {
+  .paragraph {
+    padding: 0;
+    width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .paragraph {
+    width: 80%;
+  }
+}

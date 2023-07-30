@@ -1,0 +1,11 @@
+.container_web {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+@media (max-width: 768px) {
+  .container_web {
+    gap: 30px;
+  }
+}

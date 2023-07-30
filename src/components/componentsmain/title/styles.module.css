@@ -1,0 +1,6 @@
+.title_web {
+  font-size: clamp(35px, 4vw, 50px);
+  font-weight: 800;
+  color: var(--txt-title-color);
+  padding-top: 20px;
+}

@@ -26,6 +26,6 @@ img {
 }
 
 p {
-  line-height: 1.5;
-  color: var(--txt-color);
+  line-height: 25px;
+  color: var(--txt-color-gray);
 }

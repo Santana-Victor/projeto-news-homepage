@@ -1,0 +1,27 @@
+.aside {
+  background-color: var(--txt-title-color);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px 15px 20px 20px;
+}
+
+.aside article:not(:last-child) {
+  border-bottom: 1px solid var(--txt-color-gray);
+}
+
+.aside__a {
+  font-size: 16px;
+  color: var(--txt-color-white);
+}
+
+.aside__a:hover {
+  color: var(--txt-subtitle-color);
+}
+
+@media (max-width: 1024px) {
+  .aside {
+    gap: 20px;
+    padding: 15px;
+  }
+}
