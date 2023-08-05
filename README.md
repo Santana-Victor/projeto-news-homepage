@@ -17,8 +17,10 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML e CSS
+- React.js
+- Typescript
 - JavaScript
+- HTML e CSS
 - Git e Github
 
 ## 💻 Projeto
